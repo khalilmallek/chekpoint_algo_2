@@ -1,0 +1,191 @@
+                  ----------------------------frist solution---------------------------------
+algorithme Sum_distin 
+var
+
+var arr1= array[]of integer;
+var arr2= array[]of integer;
+i,j,n,d,k,dis:integer;
+sum_dist:integer;
+
+begin
+
+Repeat 
+  write("give size of array "); 
+   Read(n); 
+untul (n<=0);
+for(i=0 to n do step1)
+    write ("give element arr1["+i+"]");
+   read(arr1[i]);
+end_for
+for(j=0 to n do step1)
+    write ("give element arr1["+j+"]");
+   read(arr2[j]);
+end_for
+dis:=0;
+d:=0 ;
+k:=0;
+Repeat
+ for(i=0 to n do step1)
+       if(arr1[d]!=arr2[i])  
+         dis:=dis+arr[i];
+         d:=d+1;
+       end_if
+          else_if
+          d:=d+1;
+       end else_if
+ end_pour
+ for(j=0 to n do step1)
+       if(arr2[d]!=arr1[j])  
+         dis:=dis+arr[j];
+         k:=k+1;
+       end_if
+          else_if
+          k:=k+1;
+       end else_if
+ end_pour
+until(d<=n)
+write("sum of all distinct elements ="+dis);
+end_sum
+                  ----------------------------seconde solution---------------------------------
+algorithme Sum_distin_2 
+var
+
+var arr1= array[]of integer;
+var arr2= array[]of integer;
+i,j,n,d,dis:integer;
+sum_dist:integer;
+
+begin
+
+Repeat 
+  write("give size of array "); 
+   Read(n); 
+untul (n<=0);
+for(i=0 to n do step1)
+    write ("give element arr1["+i+"]");
+   read(arr1[i]);
+end_for
+for(j=0 to n do step1)
+    write ("give element arr1["+j+"]");
+   read(arr2[j]);
+end_for
+dis:=0;
+d:=0 
+Repeat
+ for(i=0 to n do step1)
+       if((arr1[d]==arr[i])=false)  
+         dis:=dis+arr[i];
+         d:=d+1;
+       end_if
+          else_if
+          d:=d+1;
+       end else_if
+ end_pour
+ for(j=0 to n do step1)
+       if(arr2[d]==arr1[j]=false)  
+         dis:=dis+arr[j];
+         k:=k+1;
+       end_if
+          else_if
+          k:=k+1;
+       end else_if
+ end_pour
+until(d<=n)
+write("sum of all distinct elements ="+dis);
+end_sum
+                  ----------------------------third solution---------------------------------
+algorithme Sum_common
+var
+
+var arr1= array[]of integer;
+var arr2= array[]of integer;
+i,j,n,d,k,dis:integer;
+sum_dist:integer;
+
+begin
+
+Repeat 
+  write("give size of array "); 
+   Read(n); 
+untul (n<=0);
+for(i=0 to n do step1)
+    write ("give element arr1["+i+"]");
+   read(arr1[i]);
+end_for
+for(j=0 to n do step1)
+    write ("give element arr1["+j+"]");
+   read(arr2[j]);
+end_for
+dis:=0;
+d:=0 ;
+k:=0;
+Repeat
+ for(i=0 to n do step1)
+       if(arr1[d]==arr2[i])  
+         dis:=dis+arr[i];
+         d:=d+1;
+       end_if
+          else_if
+          d:=d+1;
+       end else_if
+ end_pour
+ for(j=0 to n do step1)
+       if(arr2[d]==arr1[j])  
+         dis:=dis+arr[j];
+         k:=k+1;
+       end_if
+          else_if
+          k:=k+1;
+       end else_if
+ end_pour
+until(d<=n)
+write("sum of all distinct elements ="+dis);
+end_sum
+                  ----------------------------solution four---------------------------------
+algorithme Sum_distin_2 
+var
+
+var arr1= array[]of integer;
+var arr2= array[]of integer;
+i,j,n,d,dis:integer;
+sum_dist:integer;
+
+begin
+
+Repeat 
+  write("give size of array "); 
+   Read(n); 
+untul (n<=0);
+for(i=0 to n do step1)
+    write ("give element arr1["+i+"]");
+   read(arr1[i]);
+end_for
+for(j=0 to n do step1)
+    write ("give element arr1["+j+"]");
+   read(arr2[j]);
+end_for
+dis:=0;
+d:=0 
+Repeat
+ for(i=0 to n do step1)
+       if((arr1[d]==arr[i])=true)  
+         dis:=dis+arr[i];
+         d:=d+1;
+       end_if
+          else_if
+          d:=d+1;
+       end else_if
+ end_pour
+ for(j=0 to n do step1)
+       if(arr2[d]==arr1[j]=true)  
+         dis:=dis+arr[j];
+         k:=k+1;
+       end_if
+          else_if
+          k:=k+1;
+       end else_if
+ end_pour
+until(d<=n)
+write("sum of all distinct elements ="+dis);
+end_sum
+         
